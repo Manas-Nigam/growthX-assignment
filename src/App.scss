@@ -1,0 +1,140 @@
+$initial-color: #ffffff;
+$final-color: #999999;
+$duration: 3s;
+$spark-scoop-move: 0.8s;
+$spark-scoop-delay: 0.2s;
+$text-fade-in: 0.5s;
+$color-transition: 0.5s;
+$fade-out-duration: 1s;
+$initial-gap: 20px;
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #000;
+  color: white;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.ElevateContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 25vh;
+  width: 100vw;
+  position: relative;
+}
+
+.LogoWrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50px);
+}
+
+.sparkle {
+  width: 100px;
+  height: 100px;
+  background-color: $initial-color;
+  .sparkle1 {
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  .sparkle2 {
+    position: fixed;
+    bottom: 50%;
+    right: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  .sparkle3 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  .sparkle4 {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 50%;
+  }
+}
+
+.scoop {
+  border: white solid 1px;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  .scoop1 {
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  .scoop2 {
+    position: fixed;
+    top: 0%;
+    right: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 50%;
+  }
+}
+.scoopFadeDiv {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  z-index: 0;
+  background-color: $initial-color;
+}
+
+.ElevateText {
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+  color: $final-color;
+  letter-spacing: 30px;
+  font-weight: 500;
+}
