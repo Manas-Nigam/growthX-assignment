@@ -19,7 +19,7 @@ root.render(
         borderRadius: 8,
       }}
       animate={{ opacity: [0, 1] }}
-      transition={{ delay: 5.5 }}
+      transition={{ delay: 6 }}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
       onClick={() => window.location.reload()}

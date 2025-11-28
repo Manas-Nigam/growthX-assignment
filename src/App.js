@@ -8,7 +8,7 @@ function App() {
         className="mainContainer"
         animate={{ opacity: 0 }}
         initial={{ opacity: 1 }}
-        transition={{ duration: 3, delay: 3, ease: "easeInOut" }}
+        transition={{ duration: 1, delay: 6, ease: "easeInOut" }}
       >
         <motion.div
           key={animationKey}
@@ -17,7 +17,7 @@ function App() {
             y: [100, 0],
             ease: [0, 0.25, 0.5, 0.75, 1],
           }}
-          transition={{ duration: 1.2, delay: 2, ease: "easeInOut" }}
+          transition={{ duration: 1.2, delay: 4, ease: "easeInOut" }}
         >
           <motion.div
             className="LogoWrapper"
@@ -28,7 +28,7 @@ function App() {
               scale: [0, 0.3, 0.5, 0.7, 1],
               opacity: [0, 0, 1],
             }}
-            transition={{ duration: 2, ease: "easeInOut" }}
+            transition={{ duration: 2, ease: "linear", delay: 1.5 }}
           >
             <div className="sparkle">
               <div className="sparkle1"></div>
@@ -37,17 +37,26 @@ function App() {
               <div className="sparkle4"></div>
             </div>
           </motion.div>
-          <motion.div className="LogoWrapper">
+          <motion.div
+            className="LogoWrapper"
+            animate={{ opacity: [0, 1] }}
+            transition={{ duration: 1.7, ease: "linear" }}
+          >
             <motion.div
               className="scoopFadeDiv"
               animate={{
                 x: [-75, 0],
                 width: [0, 200],
               }}
-              transition={{ duration: 1.5, ease: "easeInOut" }}
+              transition={{ duration: 1.5, ease: "linear", delay: 1.7 }}
             ></motion.div>
             <div className="box1"></div>
             <div className="box2"></div>
+            <motion.div
+              className="fadedDiv"
+              animate={{ y: [0, -300] }}
+              transition={{ duration: 3, ease: "linear" }}
+            ></motion.div>
             <motion.div className="scoop">
               <motion.div className="scoop1"></motion.div>
               <motion.div className="scoop2"></motion.div>
@@ -63,7 +72,7 @@ function App() {
           }}
           transition={{
             duration: 1.2,
-            delay: 2,
+            delay: 4,
             ease: "easeInOut",
             times: [0, 0.25, 0.5, 0.75, 1],
           }}

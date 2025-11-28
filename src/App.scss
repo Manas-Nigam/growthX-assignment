@@ -96,7 +96,7 @@ body {
 }
 
 .scoop {
-  border: white solid 1px;
+  border: rgb(194, 194, 194) solid 1px;
   width: 200px;
   height: 200px;
   z-index: 5;
@@ -109,7 +109,9 @@ body {
     height: 200px;
     background-color: black;
     border-radius: 50%;
-    border: white solid 1px;
+    border: rgb(194, 194, 194) solid 1px;
+    box-shadow: 0 0 8px rgba(255,255,255,1);
+
   }
   .scoop2 {
     z-index: 5;
@@ -120,7 +122,9 @@ body {
     height: 200px;
     background-color: black;
     border-radius: 50%;
-    border: white solid 1px;
+    border: rgb(194, 194, 194) solid 1px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 1);
+
   }
 }
 .scoopFadeDiv {
@@ -148,7 +152,7 @@ body {
   position: fixed;
   top: 0;
   right:3.3vw ;
-  width: 220px;
+  width: 240px;
   height: 300px;
   background-color: black;
   rotate: 135deg;
@@ -159,8 +163,17 @@ body {
   position: fixed;
   top: 0;
   left:3.3vw ;
-  width: 220px;
+  width: 240px;
   height: 300px;
   background-color: black;
   rotate: 45deg;
+}
+
+.fadedDiv{
+  z-index: 8;
+  position: fixed;
+  top: 0vw;
+  background-color: black;
+  width: 220px;
+  height: 160px;
 }
