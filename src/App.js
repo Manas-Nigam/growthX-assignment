@@ -46,6 +46,8 @@ function App() {
               }}
               transition={{ duration: 1.5, ease: "easeInOut" }}
             ></motion.div>
+            <div className="box1"></div>
+            <div className="box2"></div>
             <motion.div className="scoop">
               <motion.div className="scoop1"></motion.div>
               <motion.div className="scoop2"></motion.div>
